@@ -1,0 +1,55 @@
+//
+//  estate.pch
+//  yunEstate
+//
+//  Created by  677676  on 17/3/23.
+//  Copyright © 2017年 艾腾软件. All rights reserved.
+//
+
+#ifndef estate_pch
+#define estate_pch
+
+/**
+ kUseScreenShotGesture为截图返回效果   0为关闭，1为打开
+ （针对整个APP全局的）
+ */
+#pragma mark -------------------截图返回手势
+#import "AppDelegate.h"
+
+/**pod第三方*/
+#import <Masonry.h>
+#import <SDAutoLayout.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <SDCycleScrollView.h>
+
+/**工具*/
+#import "StaticData.h"
+
+
+/**类别*/
+#import "NSDate+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "ATSwTextView.h"
+#import "UIButton+Extension.h"
+#import "UIColor+Extension.h"
+#import "UILabel+Extension.h"
+#import "UIView+Extension.h"
+
+
+/**接口文档*/
+#import "ATAPIConfig.h"
+#import "ATHttpTool.h"
+/**常用宏定义*/
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+//字符串是否位空
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
+
+
+
+#endif /* estate_pch */
